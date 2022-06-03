@@ -5,6 +5,7 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 } 
 
+/* Sets up the body format */
 body {
     padding: 0;
     margin: 0; 
@@ -15,42 +16,23 @@ body {
     align-items: center;       
 }
 
-.searchBtn {
-    margin-top: 10px;
-    width: 227px;
-    border-radius: 1rem;
-    background-color: #9d4ef8;
-    color: whitesmoke;
-}
+p {
+    font-size: small;
+} 
 
-.searchArea {
-    grid-area: searchArea;
-    width: 90%;  
-}
-.returnArea {
-    grid-area: returnArea;
-    border-style: double;
-    width:auto;
-    border-color: rgb(235, 148, 19);
-    padding: 5px;
-}
-.fiveDay {
-    grid-area: fiveDay;
-    text-align: left;
-    border-color: rgb(235, 148, 19);
-}
-
+/* creating a grid layout */
 .grid-container {
     display: grid;
     border-style: solid;
     grid-template-areas: 
     'header header header header header header'
     'searchArea searchArea returnArea returnArea returnArea returnArea'
-    'searchArea searchArea fiveDay fiveDay fiveDay fiveDay';
-    width: 1300px;
+    'searchArea searchArea fiveDay fiveDay fiveDay fiveDay';  
     gap: 10px;
     padding: 10px;   
 }
+
+/* Header container in grid */
 .header {
     grid-area: header;
     font-weight: bolder;
@@ -60,8 +42,84 @@ body {
     padding-top: 12px;
     color: white;
 }
+
+/*Building out the search area*/
+.searchArea {
+    grid-area: searchArea;
+    width: 90%;  
+}
+
+.searchBtn {
+    margin-top: 10px;
+    width: 227px;
+    border-radius: 1rem;
+    background-color: #9d4ef8;
+    color: whitesmoke;
+}
+
 #searchBtn:hover {
     font-size: 25px;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
 }
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.pastBtn {
+    font-size: medium;
+    border-radius: .5em;
+    width: max-content;
+}
+
+.pastBtn:hover {
+    font-size: 16.5px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/* Where the return API information will go*/
+.returnArea {
+    grid-area: returnArea;
+    border-style: double;
+    width:auto;
+    border-color: rgb(235, 148, 19);
+    padding: 5px;
+}
+
+.uvBtn {
+    font-size: small;
+    border-radius: .4em;
+    border-style: none;
+}
+
+
+/* Five day forcasts area*/
+.fiveDay {
+    grid-area: fiveDay;
+    text-align: left;
+    border-color: rgb(235, 148, 19);
+}
+
+/* Builds days out by cards and makes them in a row*/
+.forecast {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.card {
+    padding: 10px;
+    margin-top: 0px;
+    padding-top: 0px;
+    width: 250px;
+    text-align: Left;
+    border-style: solid;
+    border-width: 1px;
+
+  }
