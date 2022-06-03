@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' href='./assets/css/rest.css'>
+    <link rel='stylesheet' href='./assets/css/style.css'>
+    <title>Weather For Travel</title>
+</head>
+<body>
+    <!--Creating a container to build out searches-->
+    <section class='grid-container'>
+        <!--Header portion of grid-->
+        <div class='header'>Weather Forcast</div>
+        <!--Search Area and past searches-->
+        <div class='searchArea'>
+            <h1>Add a City</h1>
+            <input type='text' name='city' id='city'>
+            <h2>Add a State</h2>
+            <input type='text' name='state' id='state'>
+            <br>
+            <button id='searchBtn' class='searchBtn'>Search</button>
+            <hr>
+                <div class='searchArea'>
+                    <ul>
+                        <li id='pastCities'><button>Place holder for city's searched</button></li>
+                    </ul>
+                </div>
+        </div>
+        <div class='returnArea'>
+            <h2>City Name</h2>
+            <p>Temp: </p>
+            <p>Wind:</p>
+            <p>Humidity:</p>
+            <p>UV Index:<button></button></p>
+        </div>
+        <div class='fiveDay'>
+            <h2>5-Day Forecast:</h2>
+            <p>card 1</p>
+            <p>card 2</p>
+            <p>card 3</p>
+            <p>card 4</p>
+            <p>card 5</p>
+        </div>       
+    </section>
+    <script src="./assets/script.js"></script>
+</body>
+</html>

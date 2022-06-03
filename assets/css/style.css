@@ -1,0 +1,67 @@
+/* Setting up page peramiters*/
+*, * ::before, * ::after {
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+} 
+
+body {
+    padding: 0;
+    margin: 0; 
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;       
+}
+
+.searchBtn {
+    margin-top: 10px;
+    width: 227px;
+    border-radius: 1rem;
+    background-color: #9d4ef8;
+    color: whitesmoke;
+}
+
+.searchArea {
+    grid-area: searchArea;
+    width: 90%;  
+}
+.returnArea {
+    grid-area: returnArea;
+    border-style: double;
+    width:auto;
+    border-color: rgb(235, 148, 19);
+    padding: 5px;
+}
+.fiveDay {
+    grid-area: fiveDay;
+    text-align: left;
+    border-color: rgb(235, 148, 19);
+}
+
+.grid-container {
+    display: grid;
+    border-style: solid;
+    grid-template-areas: 
+    'header header header header header header'
+    'searchArea searchArea returnArea returnArea returnArea returnArea'
+    'searchArea searchArea fiveDay fiveDay fiveDay fiveDay';
+    width: 1300px;
+    gap: 10px;
+    padding: 10px;   
+}
+.header {
+    grid-area: header;
+    font-weight: bolder;
+    text-align: center;
+    background-color: blue;
+    height: 50px;
+    padding-top: 12px;
+    color: white;
+}
+#searchBtn:hover {
+    font-size: 25px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
