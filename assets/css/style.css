@@ -36,9 +36,11 @@ p {
 .header {
     grid-area: header;
     font-weight: bolder;
+    font-size: 45px;
     text-align: center;
     background-color: blue;
-    height: 50px;
+    background-image: radial-gradient(rgb(0, 162, 255), rgb(0, 174, 255), rgb(0, 9, 128));
+    height: 75px;
     padding-top: 12px;
     color: white;
 }
@@ -52,7 +54,7 @@ p {
 .searchBtn {
     margin-top: 10px;
     width: 227px;
-    border-radius: 1rem;
+    border-radius: .5em;
     background-color: #9d4ef8;
     color: whitesmoke;
 }
