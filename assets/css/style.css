@@ -5,6 +5,12 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 } 
 
+:root {
+    --border-radius: 0.3rem;
+    --primary: rgb(255, 255, 255); 
+    --secondary: rgb(117, 240, 17);
+    --tertiary:  rgb(119, 136, 153);
+}
 /* Sets up the body format */
 body {
     padding: 0;
@@ -13,7 +19,7 @@ body {
     width: 100vw;
     height: 100vh;
     justify-content: center;
-    align-items: center;       
+    align-items: center;           
 }
 
 p {
@@ -24,12 +30,17 @@ p {
 .grid-container {
     display: grid;
     border-style: solid;
+    border-color: black;
+    border-width: 10px;
     grid-template-areas: 
     'header header header header header header'
     'searchArea searchArea returnArea returnArea returnArea returnArea'
     'searchArea searchArea fiveDay fiveDay fiveDay fiveDay';  
     gap: 10px;
-    padding: 10px;   
+    padding: 10px; 
+    background-color: var(--tertiary);  
+    color: var(--primary);
+    box-shadow: 6px 5px var(--secondary);
 }
 
 /* Header container in grid */
@@ -48,14 +59,28 @@ p {
 /*Building out the search area*/
 .searchArea {
     grid-area: searchArea;
-    width: 90%;  
+    width: 90%; 
+    display: block; 
 }
-
+.formLabel {
+    font-size: 1.1rem;
+    margin: 0 0 0 5px;
+  }
+  
+  .formInput {
+    width: 100%;
+    padding: 3%;
+    margin: 5px 0;
+    font-size: 1.2rem;
+    border: 2px solid var(--light-dark);
+    border-radius: var(--border-radius);
+  }
 .searchBtn {
     margin-top: 10px;
     width: 227px;
     border-radius: .5em;
-    background-color: #9d4ef8;
+    background-color: blue;
+    background-image: radial-gradient(rgb(0, 162, 255), rgb(0, 174, 255), rgb(0, 9, 128));
     color: whitesmoke;
 }
 
@@ -101,8 +126,7 @@ ul {
 /* Five day forcasts area*/
 .fiveDay {
     grid-area: fiveDay;
-    text-align: left;
-    border-color: rgb(235, 148, 19);
+    text-align: left;    
 }
 
 /* Builds days out by cards and makes them in a row*/
@@ -115,6 +139,14 @@ ul {
     
 }
 
+.cardSearch {
+    padding: 10px;
+    margin-top: 0px;
+    padding-top: 0px;
+    width: 250px;
+    text-align: Left;
+}
+
 .card {
     padding: 10px;
     margin-top: 0px;
@@ -123,5 +155,6 @@ ul {
     text-align: Left;
     border-style: solid;
     border-width: 1px;
-
-  }
+    background-color: blue;
+    background-image: radial-gradient(rgb(0, 162, 255) 2%, rgb(0, 174, 255) 3%, rgb(0, 9, 128) 50%);;
+}

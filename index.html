@@ -15,12 +15,14 @@
         <div class='header'>Weather Forecast</div>
         <!--Search Area and past searches-->
         <div class='searchArea'>
-            <h1>Add a City</h1>
-            <input type='text' name='city' id='city'>
-            <h2>Add a State</h2>
-            <input type='text' name='state' id='state'>
-            <br>
-            <button id='searchBtn' class='searchBtn'>Search</button>
+            <h3>Search Destination</h3>
+            <form id='searchInfo' class='cardSearch'>
+                <label class='formLabel' for='city'>City</label>
+                <input name='city' id='city' type='text' autofocus='true' class='formInput'>
+                <label class='formLabel' for='state'>State</label>
+                <input name='state' id='state' type='text' autofocus='true' class='formInput'>
+                <button type='submit' id='searchBtn' class='searchBtn'>Search</button>
+            </form>
             <hr>
                 <div class='searchArea'>
                     <ul>
@@ -33,7 +35,7 @@
             <p>Temp: </p>
             <p>Wind:</p>
             <p>Humidity:</p>
-            <p>UV Index:<button class='uvBtn'>0.47</button></p>
+            <p>UV Index: <button class='uvBtn'> 0.47</button></p>
         </div>
         <div class='fiveDay'>
             <h2>5-Day Forecast:</h2>
@@ -79,3 +81,4 @@
     <script src="./assets/script.js"></script>
 </body>
 </html>
+
