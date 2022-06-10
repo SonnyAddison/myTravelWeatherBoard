@@ -21,7 +21,10 @@ body {
     justify-content: center;
     align-items: center;           
 }
-
+h2 {
+    font-size: larger;
+    color: var(--secondary);
+}
 p {
     font-size: small;
 } 
@@ -67,7 +70,7 @@ p {
     margin: 0 0 0 5px;
   }
   
-  .formInput {
+.formInput {
     width: 100%;
     padding: 3%;
     margin: 5px 0;
@@ -116,6 +119,18 @@ ul {
     padding: 5px;
 }
 
+.list-group {
+    padding: 0;
+    list-style: none;
+}
+
+.returnCity {
+    font-size: x-large;
+    font-weight: 800;
+    padding-bottom: 5px;
+    color: var(--secondary);
+}
+
 .uvBtn {
     font-size: small;
     border-radius: .4em;
@@ -158,3 +173,9 @@ ul {
     background-color: blue;
     background-image: radial-gradient(rgb(0, 162, 255) 2%, rgb(0, 174, 255) 3%, rgb(0, 9, 128) 50%);;
 }
+
+.formLabel {
+    font-size: 1.1rem;
+    margin: 0 0 0 5px;
+}
+
