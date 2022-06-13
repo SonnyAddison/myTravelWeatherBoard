@@ -5,6 +5,10 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 } 
 
+body i {
+    font-family:'FontAwesome'!important;
+}
+
 :root {
     --border-radius: 0.3rem;
     --primary: rgb(255, 255, 255); 
